@@ -1,0 +1,377 @@
+body{
+    width: 100%;
+    margin: 0%;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+#header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    background-color: rgb(256,256,256);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0,0,0);
+    transition: 0.4s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:orangered;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color:orangered ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/*home page*/
+#hero{
+    background-image: url(img/young-japanese-woman-portrait-sitting-chair.jpg);
+    height: 90vh;
+    width: 89.49%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0px 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: black;
+    font-size: 28px;
+
+
+}
+#top{
+    margin-top: 1%;
+    margin-bottom: 1%
+}
+#hero h2,
+#hero h1
+#hero p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#hero h2,
+#hero p{
+    color: orangered;
+}
+#hero p{
+    font-size: 25px;
+}
+#hero button{
+    background-image: url(img/but-removebg-preview.png);
+    background-color:transparent ;
+    color: black;
+    border: 0;
+    padding: 10px 20px 10px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fe-box img{
+    width: 350px;
+    margin: 0;
+}
+.fe-box h6{
+    margin-top: 0%;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+#feature .fe-box{
+    width: 350px;
+    text-align: center;
+    padding: 0;
+    box-shadow: 30px 30px 34px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(244, 92, 4, 0.1);
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    background-color: orangered;
+    display: inline-block;
+}
+.pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#product1 h2{
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#product1 p{
+    font-size: 30px;
+    text-align: center;
+    color: orangered;
+}
+#product1 .pro{
+    width: 21%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0px;
+    transition: 0.2s ease;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+#product1 .pro img{
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#product1 .pro .des{
+    padding: 10px 0;
+}
+#product1 .pro .des span,
+#product1 .pro .des h5,
+#product1 .pro .des h4{
+    color: black;
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 300;
+}
+#product1 .pro .des #cart{
+    font-size: 25px;
+    color: black;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("img/banner/banner.jpeg.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#banner h4{
+    color: rgb(252, 231, 220);
+    padding-bottom: 0;
+    margin: 5px;
+    font-size: 30px;
+}
+#banner h2{
+    color: rgb(252, 231, 220);
+    padding-bottom: 10px;
+    margin: 10px;
+    font-size: 50px;
+}
+#banner h2 span{
+    color: rgb(10, 202, 138);
+    font-weight: 700;
+    font-size: 58px;
+}
+
+#banner button:hover{
+    background-color: orangered;
+    color: #ffffff;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner/ban2.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    padding: 10px 10px;
+    font-size: 25px;
+    margin: 0%;
+}
+
+#newsletter h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin: 4px;
+    padding-top: 10px;
+
+}
+
+#newsletter p{
+    font-size: 20px;
+    font-weight: 600;
+    color:azure;
+    padding-bottom: 10px;
+    margin: 4px;
+}
+
+#newsletter p span{
+    color: orangered;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+
+}
+
+#newsletter input{
+   height: 17px;
+   padding: 10px;
+   font-size: 14px;
+   width: 100%;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   outline: none;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: bisque;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+ }
+ .col img{
+    
+    height: 100px;
+ }
+ #foot{
+    padding: 5px 40px 5px 40px;
+ }
+ .col h4{
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+ }
+ 
+ .install img{
+    height: 40px;
+ }
+ footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+ }
+ footer .col .install .pay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ footer p{
+    font-size:15px;
+    margin: 0 0 8px 0;
+ }
+ footer a{
+    font-size:15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+ }
+ footer .follow{
+    margin-top: 20px;
+
+ }
+ footer .follow i{
+    color: #555;
+    padding-right:4px;
+    cursor: pointer;
+ }
+ footer .install .row img{
+    cursor: pointer;
+ }
+ footer .follow i:hover,
+ footer a:hover{
+    color: orangered;
+ }
+ footer .copyright{
+    width: 100%;
+    text-align: center;
+ }
